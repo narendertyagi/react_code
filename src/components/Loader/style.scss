@@ -1,0 +1,102 @@
+.comp_Loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.comp_Loader:after,
+.comp_Loader:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0
+}
+.comp_Loader:before {
+    -webkit-animation: vx_fade-in .3s ease-out 0s both;
+    animation: vx_fade-in .3s ease-out 0s both;
+    background-color: rgba(255, 255, 255, .8);
+    height: 100%;
+    width: 100%;
+    z-index: 1000
+}
+.comp_Loader:after {
+    -webkit-animation: vx_spin 620ms infinite linear;
+    animation: vx_spin 620ms infinite linear;
+    bottom: 15%;
+    display: block;
+    margin: auto;
+    right: 0;
+    z-index: 1001
+}
+.comp_Loader-small:after {
+    background: url(./img/spinner-small.svg);
+    height: 25px;
+    width: 25px
+}
+
+.comp_Loader-medium:after {
+    background: url(./img/spinner-medium.svg);
+    height: 50px;
+    width: 50px
+}
+
+.comp_Loader-large:after {
+    background: url(./img/spinner-small.svg);
+    height: 128px;
+    width: 128px
+}
+
+@-webkit-keyframes vx_fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes vx_fade-in {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@-webkit-keyframes vx_fade-out {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+@keyframes vx_fade-out {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+@-webkit-keyframes vx_spin {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+@keyframes vx_spin {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
