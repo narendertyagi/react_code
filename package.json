@@ -84,7 +84,7 @@
     "@bower_components/toastr": "CodeSeven/toastr#^2.1.1",
     "@bower_components/urijs": "medialize/URI.js#^1.19.0",
     "antd": "^3.9.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-add-module-exports": "^1.0.0",
     "babel-plugin-dynamic-import-webpack": "^1.0.2",
     "babel-plugin-remove-webpack": "^1.1.0",
